@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Template NTT</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+*{
+  box-sizing: border-box;
+  ;
+}
+stylesheet{
+  width: 100px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 200%;
+ 
+  
+}
+
+/* Style the header */
+header {
+  background-color: aquamarine;
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 500 /* only for demonstration, should be removed */
+  background 100%;
+  padding: 15px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 100px;
+}
+
+article {
+  float: left;
+  padding: 30px;
+  width: 50%;
+  background-color: white;
+  height: 350px; /* only for demonstration, should be removed */
+}
+
+/* FOOTER */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+  color: green;
+
+}
+
+/* rodapé */
+footer {
+  background-color: burlywood;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+div{
+  background-color: wheat;
+  height: 100%;
+}
+
+ form{
+  text-align: center;
+}
+ button {
+  width: 80px;
+  margin: 10px;
+  width: 150px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 300px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+   <header>
+        <h1>Banco de Dados de Filmes</h1>       
+    </header>
+    <section>
+      <form>
+       
+         <label for="est">Procure seu Filme</label>
+         <input id="est" list="filmes"/>  
+          <datalist id="filmes"> 
+          <option value="Oppenheimer"> 
+          <option value="Passagens"> 
+          <option value="Dreamin Wild"> 
+          <option value="Crescendo juntas"> 
+          <option value="Assassino da Lua das Flores">
+          <option value="Memórias de Paris">
+            <option value="Priscilla">    
+              <option value="Zona de Interesse">    
+                <option value="Maestro">    
+                  <option value="Folhas de outono">    
+                    <option value="Vidas Passadas">    
+                      <option value="O Sabor da Vida">    
+                        <option value="Asteroid City">    
+          </datalist>
+          
+          <button type="button" class="btn btn-primary btn-sm">Pesquisar</button>
+          <button type="reset" class="btn btn-primary btn-sm">Reiniciar</button>
+          
+      </form>
+    
+      <img src="Obi_Wan.jpg" alt="Obi_Wan" style= "max-width:240px;align-content:50px;background-position: 100px;">
+
+            <article>
+        <h1>Titulo do Filme</h1>
+        <p>A API OMDb é um serviço web RESTful para obter informações de filmes, todo o conteúdo e imagens do site são contribuídos e mantidos por nossos usuários.</p>
+        <p>API de pôster está disponível apenas para usuários. Atualmente mais de 280 mil pôsteres, atualizados diariamente com resoluções de até 2.000x3.000.</p>
+        <h3>Torne-se um Patrono Clicando no Botão Abaixo</h3>
+        <button type="button" class="btn btn-primary btn-xlg">Torne-se Patrono</button>
+
+       
+        
+    
+            </article>
+    </section>
+
+<footer>
+  <p>Footer</p>
+ </footer>
+
+</body>
+</html>
+
