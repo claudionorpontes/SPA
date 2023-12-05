@@ -9,33 +9,27 @@
 
 *{
   box-sizing: border-box;
-  ;
-}
-stylesheet{
-  width: 100px;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 200%;
- 
   
 }
 
 header {
   background-color: aquamarine;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
-  font-size: 15px;
+  font-size: 40px;
   color: black;
+  
+}
+label{
+  float: 150px;
 }
 
 nav {
-  float: left;
-  width: 10%;
-  height: 500 
-  background 100%;
-  padding: 15px;
+  float: right;
+  width: 15%;
+  height: 50px 
+  background 100px
+  padding 25px;
 }
 
 nav ul {
@@ -45,38 +39,30 @@ nav ul {
 
 article {
   float: left;
-  padding: 30px;
-  width: 50%;
+  padding: 28px;
+  width: 75%;
   background-color: white;
-  height: 350px; /* only for demonstration, should be removed */
-}
+  height: 400px; 
 
 
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-  color: green;
+section {
+  align-content: center
 
 }
 
-footer {
-  background-color: burlywood;
-  padding: 10px;
-  text-align: center;
-  color: black;
-}
 div{
   background-color: wheat;
   height: 100%;
 }
 
  form{
-  text-align: center;
+  text-align: right;
+  width: 10px;
+  margin: 10px;
 }
  button {
   width: 80px;
-  margin: 10px;
+  margin: 15px;
   width: 150px;
 }
 
@@ -86,17 +72,30 @@ div{
     height: auto;
   }
 }
+
 </style>
 </head>
 <body>
    <header>
-        <h1>Banco de Dados de Filmes</h1>       
+        <h1>
+          <i>
+            Banco de Dados de Filmes
+          </i>          
+        </h1>       
     </header>
     <section>
       <form>
+       <br>
        
-         <label for="est">Procure seu Filme</label>
-         <input id="est" list="filmes"/>  
+      <label for="est"></label>
+        <strong> 
+        <b>
+         <i>Procure seu Filme</i> 
+        </b>
+      </strong>
+      
+      </label>
+        <input id="est" list="filmes"/>  
           <datalist id="filmes"> 
           <option value="Oppenheimer"> 
           <option value="Passagens"> 
@@ -118,7 +117,7 @@ div{
           
       </form>
     
-      <img src="Obi_Wan.jpg" alt="Obi_Wan" style= "max-width:240px;align-content:50px;background-position: 100px;">
+      <img src="Obi_Wan.jpg" alt="Obi_Wan" style= "max-width:300px;align-content:50px;background-position: 100px;">
 
             <article>
         <h1>Titulo do Filme</h1>
@@ -126,17 +125,17 @@ div{
         <p>API de pôster está disponível apenas para usuários. Atualmente mais de 280 mil pôsteres, atualizados diariamente com resoluções de até 2.000x3.000.</p>
         <h3>Torne-se um Patrono Clicando no Botão Abaixo</h3>
         <button type="button" class="btn btn-primary btn-xlg">Torne-se Patrono</button>
-
-       
-        
-    
+          <br>
+          <br    
+          <strong>
+            <b>Autor Claudionor Pontes
+              <br>
+              Análise ⭐⭐⭐⭐⭐
+              <br>
+              <br>
+              <button type="button" class="btn btn-primary btn-sm">Favorito ⭐</button>                   
+              </strong>
             </article>
-    </section>
-
-<footer>
-  <p>Footer</p>
- </footer>
-
+        </section>
 </body>
 </html>
-
